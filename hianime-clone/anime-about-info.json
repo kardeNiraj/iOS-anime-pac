@@ -1,0 +1,1001 @@
+{
+    "anime": {
+        "info": {
+            "id": "one-piece-100",
+            "anilistId": 21,
+            "malId": 21,
+            "name": "One Piece",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcd84731a3eda4f4a306250769675065.jpg",
+            "description": "Gold Roger was known as the \"Pirate King,\" the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King.\n\nEnter Monkey Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes—One Piece.",
+            "stats": {
+                "rating": "PG-13",
+                "quality": "HD",
+                "episodes": {
+                    "sub": 1115,
+                    "dub": 1085
+                },
+                "type": "TV",
+                "duration": "24m"
+            },
+            "promotionalVideos": [
+                {
+                    "title": "Wano Kuni Trailer",
+                    "source": "https://www.youtube.com/embed/w2oHeq8r08w",
+                    "thumbnail": "https://i.ytimg.com/vi/w2oHeq8r08w/hqdefault.jpg"
+                },
+                {
+                    "title": "PV Manga UK 6, English dub version",
+                    "source": "https://www.youtube.com/embed/um-tFlVamOI",
+                    "thumbnail": "https://i.ytimg.com/vi/um-tFlVamOI/hqdefault.jpg"
+                },
+                {
+                    "title": "PV Manga UK 5, English dub version",
+                    "source": "https://www.youtube.com/embed/sikXoDxce-s",
+                    "thumbnail": "https://i.ytimg.com/vi/sikXoDxce-s/hqdefault.jpg"
+                },
+                {
+                    "title": "PV Manga UK 1-4, English dub version",
+                    "source": "https://www.youtube.com/embed/UqYlbWrZQVo",
+                    "thumbnail": "https://i.ytimg.com/vi/UqYlbWrZQVo/hqdefault.jpg"
+                },
+                {
+                    "title": "PV Madman 32, English dub version",
+                    "source": "https://www.youtube.com/embed/-tviZNY6CSw",
+                    "thumbnail": "https://i.ytimg.com/vi/-tviZNY6CSw/hqdefault.jpg"
+                }
+            ],
+            "charactersVoiceActors": [
+                {
+                    "character": {
+                        "id": "brook-198",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/54cbbb789b82a8ca6f4b4b360ff5dfb6.jpg",
+                        "name": "Brook",
+                        "cast": "Main"
+                    },
+                    "voiceActor": {
+                        "id": "cho-471",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/1f315c80cb027f22256d54f5ace73f2d.jpg",
+                        "name": "Cho",
+                        "cast": "Japanese"
+                    }
+                },
+                {
+                    "character": {
+                        "id": "franky-307",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/a51f54aacfe2ac858c1e2870781449f0.jpg",
+                        "name": "Franky",
+                        "cast": "Main"
+                    },
+                    "voiceActor": {
+                        "id": "kazuki-yao-377",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/2a76c55a44f5f042779f9597e263f858.jpg",
+                        "name": "Yao, Kazuki",
+                        "cast": "Japanese"
+                    }
+                },
+                {
+                    "character": {
+                        "id": "luffy-monkey-d-3",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/5a4eaa036b66e63622272c1895bf3401.jpg",
+                        "name": "Monkey D., Luffy",
+                        "cast": "Main"
+                    },
+                    "voiceActor": {
+                        "id": "mayumi-tanaka-117",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/fdfe8d881f2f15c2e4bbe6c28ba1ab7f.jpg",
+                        "name": "Tanaka, Mayumi",
+                        "cast": "Japanese"
+                    }
+                },
+                {
+                    "character": {
+                        "id": "nami-102",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/a5a3e09b1ac8a8b479b71b4adeaae1c6.jpg",
+                        "name": "Nami",
+                        "cast": "Main"
+                    },
+                    "voiceActor": {
+                        "id": "akemi-okamura-453",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/56dc7d925d5e604fd2e4f5721a238221.jpg",
+                        "name": "Okamura, Akemi",
+                        "cast": "Japanese"
+                    }
+                },
+                {
+                    "character": {
+                        "id": "robin-nico-54",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/fff3dfd03470b0bdcce97778d0d23454.jpg",
+                        "name": "Nico, Robin",
+                        "cast": "Main"
+                    },
+                    "voiceActor": {
+                        "id": "yuriko-yamaguchi-162",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/9f9594aa137886e4fa3e3ac1aa4337ce.jpg",
+                        "name": "Yamaguchi, Yuriko",
+                        "cast": "Japanese"
+                    }
+                },
+                {
+                    "character": {
+                        "id": "zoro-roronoa-7",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/c7df2fc09984feb9aab02f82c6e44f9c.jpg",
+                        "name": "Roronoa, Zoro",
+                        "cast": "Main"
+                    },
+                    "voiceActor": {
+                        "id": "kazuya-nakai-37",
+                        "poster": "https://cdn.noitatnemucod.net/thumbnail/100x100/100/3eaa00f6c293df5146813f869deb0a20.jpg",
+                        "name": "Nakai, Kazuya",
+                        "cast": "Japanese"
+                    }
+                }
+            ]
+        },
+        "moreInfo": {
+            "japanese": "ONE PIECE",
+            "synonyms": "OP",
+            "aired": "Oct 20, 1999 to ?",
+            "premiered": "Fall 1999",
+            "duration": "24m",
+            "status": "Currently Airing",
+            "malscore": "8.62",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Drama",
+                "Fantasy",
+                "Shounen",
+                "Super Power"
+            ],
+            "studios": "Toei Animation",
+            "producers": [
+                "Fuji TV",
+                "TAP",
+                "Shueisha",
+                "Toei Animation",
+                "Funimation",
+                "4Kids Entertainment"
+            ]
+        }
+    },
+    "seasons": [],
+    "mostPopularAnimes": [
+        {
+            "id": "one-piece-100",
+            "name": "One Piece",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcd84731a3eda4f4a306250769675065.jpg",
+            "jname": "One Piece",
+            "episodes": {
+                "sub": 1115,
+                "dub": 1085
+            },
+            "type": "TV"
+        },
+        {
+            "id": "naruto-shippuden-355",
+            "name": "Naruto: Shippuden",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/9cbcf87f54194742e7686119089478f8.jpg",
+            "jname": "Naruto: Shippuuden",
+            "episodes": {
+                "sub": 500,
+                "dub": 500
+            },
+            "type": "TV"
+        },
+        {
+            "id": "jujutsu-kaisen-2nd-season-18413",
+            "name": "Jujutsu Kaisen 2nd Season",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b51f863b05f30576cf9d85fa9b911bb5.png",
+            "jname": "Jujutsu Kaisen 2nd Season",
+            "episodes": {
+                "sub": 23,
+                "dub": 23
+            },
+            "type": "TV"
+        },
+        {
+            "id": "bleach-806",
+            "name": "Bleach",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bd5ae1d387a59c5abcf5e1a6a616728c.jpg",
+            "jname": "Bleach",
+            "episodes": {
+                "sub": 366,
+                "dub": 366
+            },
+            "type": "TV"
+        },
+        {
+            "id": "black-clover-2404",
+            "name": "Black Clover",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f58b0204c20ae3310f65ae7b8cb9987e.jpg",
+            "jname": "Black Clover",
+            "episodes": {
+                "sub": 170,
+                "dub": 170
+            },
+            "type": "TV"
+        },
+        {
+            "id": "demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc-18056",
+            "name": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/db2f3ce7b9cab7fdc160b005bffb899a.png",
+            "jname": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+            "episodes": {
+                "sub": 11,
+                "dub": 11
+            },
+            "type": "TV"
+        },
+        {
+            "id": "boruto-naruto-next-generations-8143",
+            "name": "Boruto: Naruto Next Generations",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/32c83e2ad4a43229996356840db3982c.jpg",
+            "jname": "Boruto: Naruto Next Generations",
+            "episodes": {
+                "sub": 293,
+                "dub": 273
+            },
+            "type": "TV"
+        },
+        {
+            "id": "naruto-677",
+            "name": "Naruto",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/5db400c33f7494bc8ae96f9e634958d0.jpg",
+            "jname": "Naruto",
+            "episodes": {
+                "sub": 220,
+                "dub": 220
+            },
+            "type": "TV"
+        },
+        {
+            "id": "jujutsu-kaisen-tv-534",
+            "name": "Jujutsu Kaisen (TV)",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/82402f796b7d84d7071ab1e03ff7747a.jpg",
+            "jname": "Jujutsu Kaisen (TV)",
+            "episodes": {
+                "sub": 24,
+                "dub": 24
+            },
+            "type": "TV"
+        },
+        {
+            "id": "spy-x-family-17977",
+            "name": "Spy x Family",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/88bd17534dc4884f23027035d23d74e5.jpg",
+            "jname": "Spy x Family",
+            "episodes": {
+                "sub": 12,
+                "dub": 12
+            },
+            "type": "TV"
+        }
+    ],
+    "relatedAnimes": [
+        {
+            "id": "one-piece-episode-of-merry-the-tale-of-one-more-friend-293",
+            "name": "One Piece: Episode of Merry - The Tale of One More Friend",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f9c03a6e40d324f2cfc22f870abe1c15.jpg",
+            "jname": "One Piece: Episode of Merry - Mou Hitori no Nakama no Monogatari",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-the-movie-10-strong-world-298",
+            "name": "One Piece: The Movie 10 - Strong World",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/de58e554fa74d9a5443799ab84cf0c65.jpg",
+            "jname": "One Piece Film: Strong World",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-the-movie-12-film-z-299",
+            "name": "One Piece: The Movie 12 - Film Z",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/4f20b80bbae084c6165821c4f490a22a.jpg",
+            "jname": "One Piece Film: Z",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-the-movie-14-stampede-316",
+            "name": "One Piece: The Movie 14 - Stampede",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/e8a122d878c53cddf5730946f3bae6fb.jpg",
+            "jname": "One Piece: The Movie 14 - Stampede",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "dragon-ball-z-325",
+            "name": "Dragon Ball Z",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/2ac32c050b4dff7747fcc7f64c01edbd.jpg",
+            "jname": "Dragon Ball Z",
+            "episodes": {
+                "sub": 291,
+                "dub": 291
+            },
+            "type": "TV"
+        },
+        {
+            "id": "one-piece-episode-of-nami-tears-of-a-navigator-and-the-bonds-of-friends-336",
+            "name": "One Piece: Episode of Nami - Tears of a Navigator and the Bonds of Friends",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/e8ec23b151d2e3e0a392c3ce9f4429b7.jpg",
+            "jname": "One Piece: Episode of Nami - Koukaishi no Namida to Nakama no Kizuna",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-film-strong-world-episode-0-499",
+            "name": "One Piece Film: Strong World Episode 0",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/228ea6c39b625f78ae75fa95cf9e63ee.jpg",
+            "jname": "One Piece Film: Strong World Episode 0",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        },
+        {
+            "id": "one-piece-the-movie-13-film-gold-550",
+            "name": "One Piece: The Movie 13 - Film: Gold",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/7156c377053c230cc42b66bbf7260325.jpg",
+            "jname": "One Piece Film: Gold",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-3d2y-15th-anniversary-609",
+            "name": "One Piece 3D2Y: 15th Anniversary",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcf230a574c9b8dabbc871043f0a8443.jpg",
+            "jname": "One Piece 3D2Y: Ace no shi wo Koete! Luffy Nakama Tono Chikai",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-episode-of-east-blue-634",
+            "name": "One Piece: Episode of East Blue",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/122753b7529b699e7ee65e31bdd85e17.jpg",
+            "jname": "One Piece: Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-episode-of-sabo-the-three-brothers-bond-943",
+            "name": "One Piece: Episode of Sabo - The Three Brothers' Bond",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/c11aa8226ea5ae258307936838025535.jpg",
+            "jname": "One Piece: Episode of Sabo - 3 Kyoudai no Kizuna Kiseki no Saikai to Uketsugareru Ishi",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-baron-omatsuri-and-the-secret-island-1043",
+            "name": "One Piece: Baron Omatsuri and the Secret Island",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f1101d8772c508a881d49595b7c86679.jpg",
+            "jname": "One Piece Movie 6: Omatsuri Danshaku to Himitsu no Shima",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-baron-omatsuri-and-the-secret-island-1043",
+            "name": "One Piece: Baron Omatsuri and the Secret Island",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f1101d8772c508a881d49595b7c86679.jpg",
+            "jname": "One Piece Movie 6: Omatsuri Danshaku to Himitsu no Shima",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-episode-of-luffy-hand-island-adventure-1085",
+            "name": "One Piece: Episode of Luffy - Hand Island Adventure",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/31b60e5d857308aac024e5981d47221a.jpg",
+            "jname": "One Piece: Episode of Luffy - Hand Island no Bouken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-dead-end-1284",
+            "name": "One Piece: Dead End",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/085b2c99e12b21786da1a7cfdc314c42.jpg",
+            "jname": "One Piece Movie 4: Dead End no Bouken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-dead-end-1284",
+            "name": "One Piece: Dead End",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/085b2c99e12b21786da1a7cfdc314c42.jpg",
+            "jname": "One Piece Movie 4: Dead End no Bouken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "toriko-1300",
+            "name": "Toriko",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/82f0ba3df246ee32b51e16e976d074d3.jpg",
+            "jname": "Toriko",
+            "episodes": {
+                "sub": 147,
+                "dub": null
+            },
+            "type": "TV"
+        },
+        {
+            "id": "one-piece-movie-9-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura-1481",
+            "name": "One Piece Movie 9: Episode of Chopper Plus - Fuyu ni Saku, Kiseki no Sakura",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/65f80950ef7dd9fe39ee705123d90265.jpg",
+            "jname": "One Piece Movie 9: Episode of Chopper Plus - Fuyu ni Saku, Kiseki no Sakura",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-romance-dawn-story-1860",
+            "name": "One Piece: Romance Dawn Story",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/a7d7242012fbb0209ec15aba2e8edd67.jpg",
+            "jname": "One Piece: Romance Dawn Story",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        },
+        {
+            "id": "one-piece-special-protect-the-last-great-performance-1933",
+            "name": "One Piece Special: Protect! The Last Great Performance",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/4c9d06b236c92929ad415f78950dbf43.jpg",
+            "jname": "One Piece: Mamore! Saigo no Dai Butai",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-the-movie-8-adventures-in-alabasta-2076",
+            "name": "One Piece: The Movie 8 - Adventures in Alabasta",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/a23edd40c184ec10e6acfbf6771231ca.jpg",
+            "jname": "One Piece Movie 8: Episode of Alabasta - Sabaku no Oujo to Kaizoku-tachi",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-adventure-of-nebulandia-2254",
+            "name": "One Piece: Adventure of Nebulandia",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/31b57d916ab1c020bea5aca7f50fe678.jpg",
+            "jname": "One Piece: Adventure of Nebulandia",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-movie-7-karakuri-jou-no-mecha-kyohei-2266",
+            "name": "One Piece Movie 7: Karakuri-jou no Mecha Kyohei",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/41526ff58363bf9cea33002c065296e0.jpg",
+            "jname": "One Piece Movie 7: Karakuri-jou no Mecha Kyohei",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-movie-7-karakuri-jou-no-mecha-kyohei-2266",
+            "name": "One Piece Movie 7: Karakuri-jou no Mecha Kyohei",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/41526ff58363bf9cea33002c065296e0.jpg",
+            "jname": "One Piece Movie 7: Karakuri-jou no Mecha Kyohei",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-special-open-upon-the-great-sea-a-fathers-huge-huge-dream-2347",
+            "name": "One Piece Special: Open Upon the Great Sea! A Father's Huge, HUGE Dream!",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f76225081860e89adacad5ef06af20f2.jpg",
+            "jname": "One Piece: Oounabara ni Hirake! Dekkai Dekkai Chichi no Yume!",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-special-adventure-in-the-oceans-navel-2348",
+            "name": "One Piece Special: Adventure in the Ocean's Navel",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/878cfee15c8fab4b1341462f72461cad.jpg",
+            "jname": "One Piece: Umi no Heso no Daibouken-hen",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-special-adventure-in-the-oceans-navel-2348",
+            "name": "One Piece Special: Adventure in the Ocean's Navel",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/878cfee15c8fab4b1341462f72461cad.jpg",
+            "jname": "One Piece: Umi no Heso no Daibouken-hen",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-the-curse-of-the-sacred-sword-2451",
+            "name": "One Piece: The Curse of the Sacred Sword",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/900d9390ae10b86336a2acad56acc976.jpg",
+            "jname": "One Piece Movie 5: Norowareta Seiken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-the-curse-of-the-sacred-sword-2451",
+            "name": "One Piece: The Curse of the Sacred Sword",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/900d9390ae10b86336a2acad56acc976.jpg",
+            "jname": "One Piece Movie 5: Norowareta Seiken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-special-the-detective-memoirs-of-chief-straw-hat-luffy-2538",
+            "name": "One Piece Special: The Detective Memoirs of Chief Straw Hat Luffy",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/1e92eef56e90c0a4c2457b68f8da51e3.jpg",
+            "jname": "One Piece: Nenmatsu Tokubetsu Kikaku! Mugiwara no Luffy Oyabun Torimonochou",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-glorious-island-2688",
+            "name": "One Piece: Glorious Island",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/622144a3ae59c58a9cfa2787c27722cb.jpg",
+            "jname": "One Piece: Glorious Island",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-djangos-dance-carnival-2761",
+            "name": "One Piece: Django's Dance Carnival",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ca6a1dfa56f1bf1fdc8bf073860b9f01.jpg",
+            "jname": "One Piece: Jango no Dance Carnival",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "ONA"
+        },
+        {
+            "id": "one-piece-clockwork-island-adventure-2776",
+            "name": "One Piece: Clockwork Island Adventure",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ec524a9783f942b07a6ddd8d775b2cdb.jpg",
+            "jname": "One Piece Movie 2: Nejimaki-jima no Daibouken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-clockwork-island-adventure-2776",
+            "name": "One Piece: Clockwork Island Adventure",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ec524a9783f942b07a6ddd8d775b2cdb.jpg",
+            "jname": "One Piece Movie 2: Nejimaki-jima no Daibouken",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-soccer-king-of-dreams-2777",
+            "name": "One Piece: Soccer King of Dreams",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/d503eeb571d83c10b5d937275e397d63.jpg",
+            "jname": "One Piece: Yume no Soccer Ou!",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-recap-2836",
+            "name": "One Piece Recap",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/80cbbff9ab97108fb57908d05930133a.jpg",
+            "jname": "One Piece Recap",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        },
+        {
+            "id": "one-piece-movie-1-3096",
+            "name": "One Piece Movie 1",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ff736656ba002e0dd51363c3d889d9ff.jpg",
+            "jname": "One Piece Movie 1",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-movie-1-3096",
+            "name": "One Piece Movie 1",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ff736656ba002e0dd51363c3d889d9ff.jpg",
+            "jname": "One Piece Movie 1",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-episode-of-skypiea-3097",
+            "name": "One Piece: Episode of Skypiea",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/6a593442adebb95308e506e969852aa0.jpg",
+            "jname": "One Piece: Episode of Sorajima",
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            },
+            "type": "Special"
+        },
+        {
+            "id": "one-piece-3d-strawhat-chase-3188",
+            "name": "One Piece 3D: Strawhat Chase",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/01605691c2a52ce8c5f3226ec4a631a9.jpg",
+            "jname": "One Piece 3D: Mugiwara Chase",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-mezase-kaizoku-yakyuu-ou-3391",
+            "name": "One Piece: Take Aim! The Pirate Baseball King",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/5d09255209e6f32a295d81557416c403.jpg",
+            "jname": "One Piece: Mezase! Kaizoku Yakyuu Ou",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        },
+        {
+            "id": "one-piece-3d-gekisou-trap-coaster-3400",
+            "name": "One Piece 3D: Gekisou! Trap Coaster",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f0a890203ee84a3c205d149b6e91a724.jpg",
+            "jname": "One Piece 3D: Gekisou! Trap Coaster",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        },
+        {
+            "id": "one-piece-chopper-kingdom-of-strange-animal-island-3533",
+            "name": "One Piece: Chopper Kingdom of Strange Animal Island",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/1fed4b5260a27fe18d3e2dee6e5c068a.jpg",
+            "jname": "One Piece Movie 3: Chinjuu-jima no Chopper Oukoku",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-chopper-kingdom-of-strange-animal-island-3533",
+            "name": "One Piece: Chopper Kingdom of Strange Animal Island",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/1fed4b5260a27fe18d3e2dee6e5c068a.jpg",
+            "jname": "One Piece Movie 3: Chinjuu-jima no Chopper Oukoku",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "Movie"
+        },
+        {
+            "id": "one-piece-defeat-the-pirate-ganzack-4498",
+            "name": "One Piece: Defeat the Pirate Ganzack!",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/cf42f6e03566212945df91b25bb62510.jpg",
+            "jname": "One Piece: Taose! Kaizoku Ganzack",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        },
+        {
+            "id": "one-piece-defeat-the-pirate-ganzack-4498",
+            "name": "One Piece: Defeat the Pirate Ganzack!",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/cf42f6e03566212945df91b25bb62510.jpg",
+            "jname": "One Piece: Taose! Kaizoku Ganzack",
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            },
+            "type": "OVA"
+        }
+    ],
+    "recommendedAnimes": [
+        {
+            "id": "beelzebub-624",
+            "name": "Beelzebub",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/fd0489c24f51d5b2d6632bd4f10f4621.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 60,
+                "dub": null
+            }
+        },
+        {
+            "id": "hidamari-sketch-x-627",
+            "name": "Hidamari Sketch x ☆☆☆",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b566b16ca34d10844500b6c835b607a6.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 12,
+                "dub": null
+            }
+        },
+        {
+            "id": "high-score-girl-628",
+            "name": "High Score Girl",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/d747aae80886f53ce0ae712d8db56d8c.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 12,
+                "dub": 12
+            }
+        },
+        {
+            "id": "lupin-the-third-630",
+            "name": "Lupin the Third",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/d253ed16235c10f371abb14f4cce028f.jpg",
+            "duration": "25m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 26,
+                "dub": 26
+            }
+        },
+        {
+            "id": "the-irregular-at-magic-high-school-visitor-arc-631",
+            "name": "The Irregular at Magic High School: Visitor Arc",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b72b138f65d03a6088ca4ac5ef1f0881.jpg",
+            "duration": "23m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 13,
+                "dub": 13
+            }
+        },
+        {
+            "id": "seitokai-yakuindomo-ova-638",
+            "name": "Seitokai Yakuindomo* OVA",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/37b145a550c59fb3acb8497fd305d483.jpg",
+            "duration": "25m",
+            "type": "OVA",
+            "rating": "18+",
+            "episodes": {
+                "sub": 10,
+                "dub": null
+            }
+        },
+        {
+            "id": "lupin-iii-vs-detective-conan-the-movie-645",
+            "name": "Lupin III vs. Detective Conan: The Movie",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/57fdba881245151d99fa29385df262d2.jpg",
+            "duration": "108m",
+            "type": "Movie",
+            "rating": null,
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            }
+        },
+        {
+            "id": "soul-land-5th-season-648",
+            "name": "Soul Land: 5th Season",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ccb9889d3e55f27f6d5ebeda9378969c.png",
+            "duration": "20m",
+            "type": "ONA",
+            "rating": null,
+            "episodes": {
+                "sub": 13,
+                "dub": null
+            }
+        },
+        {
+            "id": "mobile-suit-gundam-thunderbolt-632",
+            "name": "Mobile Suit Gundam Thunderbolt",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/04cfcb53eb84ff0c4987f529e58d68c6.jpg",
+            "duration": "18m",
+            "type": "ONA",
+            "rating": "18+",
+            "episodes": {
+                "sub": 4,
+                "dub": null
+            }
+        },
+        {
+            "id": "mobile-suit-zeta-gundam-633",
+            "name": "Mobile Suit Zeta Gundam",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/d73a1f59ec9c6b62c26f6d4a0628f557.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 50,
+                "dub": 50
+            }
+        },
+        {
+            "id": "one-piece-episode-of-east-blue-634",
+            "name": "One Piece: Episode of East Blue",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/122753b7529b699e7ee65e31bdd85e17.jpg",
+            "duration": "106m",
+            "type": "Special",
+            "rating": null,
+            "episodes": {
+                "sub": 1,
+                "dub": null
+            }
+        },
+        {
+            "id": "goodbye-teacher-despair-2nd-season-637",
+            "name": "Goodbye Teacher Despair 2nd Season",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/9cee21616d81ad6220e2b173fe639c62.jpg",
+            "duration": "25m",
+            "type": "TV",
+            "rating": "18+",
+            "episodes": {
+                "sub": 13,
+                "dub": null
+            }
+        },
+        {
+            "id": "tanaka-kun-is-always-listless-639",
+            "name": "Tanaka-kun is Always Listless",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/e695e30015865308c2a53895cd5d9c70.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 12,
+                "dub": 12
+            }
+        },
+        {
+            "id": "the-prince-of-tennis-640",
+            "name": "The Prince of Tennis",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/d44b030d2a4c13bfcbce336181475483.jpg",
+            "duration": "22m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 179,
+                "dub": 128
+            }
+        },
+        {
+            "id": "sailor-moon-sailor-stars-643",
+            "name": "Sailor Moon: Sailor Stars",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/de4c242b109f74d1937601895214d85b.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 34,
+                "dub": 34
+            }
+        },
+        {
+            "id": "durarara-specials-644",
+            "name": "Durarara!! Specials",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/1e1b2d149ad801fbc496bb3b542b84cd.jpg",
+            "duration": "23m",
+            "type": "Special",
+            "rating": "18+",
+            "episodes": {
+                "sub": 2,
+                "dub": 2
+            }
+        },
+        {
+            "id": "macross-frontier-646",
+            "name": "Macross Frontier",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/52cc62d8f5bc14746e6b45e5d2dddb39.jpg",
+            "duration": "24m",
+            "type": "TV",
+            "rating": null,
+            "episodes": {
+                "sub": 25,
+                "dub": null
+            }
+        },
+        {
+            "id": "case-closed-the-fourteenth-target-647",
+            "name": "Case Closed: The Fourteenth Target",
+            "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b182a13e65ca7e8b459b0ba06ee3731b.jpg",
+            "duration": "99m",
+            "type": "Movie",
+            "rating": null,
+            "episodes": {
+                "sub": 1,
+                "dub": 1
+            }
+        }
+    ]
+}

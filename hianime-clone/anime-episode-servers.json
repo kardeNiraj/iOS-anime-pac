@@ -1,0 +1,41 @@
+{
+  "sub": [
+    {
+      "serverName": "hd-1",
+      "serverId": 4
+    },
+    {
+      "serverName": "hd-2",
+      "serverId": 1
+    },
+    {
+      "serverName": "streamsb",
+      "serverId": 5
+    },
+    {
+      "serverName": "streamtape",
+      "serverId": 3
+    }
+  ],
+  "dub": [
+    {
+      "serverName": "hd-1",
+      "serverId": 4
+    },
+    {
+      "serverName": "hd-2",
+      "serverId": 1
+    },
+    {
+      "serverName": "streamsb",
+      "serverId": 5
+    },
+    {
+      "serverName": "streamtape",
+      "serverId": 3
+    }
+  ],
+  "raw": [],
+  "episodeId": "one-piece-100?ep=2142",
+  "episodeNo": 1
+}

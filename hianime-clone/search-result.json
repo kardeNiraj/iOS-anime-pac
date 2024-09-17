@@ -1,0 +1,142 @@
+{
+  "animes": [
+    {
+      "id": "is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon-arrow-of-the-orion-1693",
+      "name": "Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/35356c13f5a026be1c0612ee546b2078.jpg",
+      "duration": "82m",
+      "type": "Movie",
+      "rating": null,
+      "episodes": {
+        "sub": 1,
+        "dub": 1
+      }
+    }
+  ],
+  "mostPopularAnimes": [
+    {
+      "id": "one-piece-100",
+      "name": "One Piece",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcd84731a3eda4f4a306250769675065.jpg",
+      "jname": "One Piece",
+      "episodes": {
+        "sub": 1103,
+        "dub": 1073
+      },
+      "type": "TV"
+    },
+    {
+      "id": "naruto-shippuden-355",
+      "name": "Naruto: Shippuden",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/9cbcf87f54194742e7686119089478f8.jpg",
+      "jname": "Naruto: Shippuuden",
+      "episodes": {
+        "sub": 500,
+        "dub": 500
+      },
+      "type": "TV"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-18413",
+      "name": "Jujutsu Kaisen 2nd Season",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b51f863b05f30576cf9d85fa9b911bb5.png",
+      "jname": "Jujutsu Kaisen 2nd Season",
+      "episodes": {
+        "sub": 23,
+        "dub": 23
+      },
+      "type": "TV"
+    },
+    {
+      "id": "bleach-806",
+      "name": "Bleach",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bd5ae1d387a59c5abcf5e1a6a616728c.jpg",
+      "jname": "Bleach",
+      "episodes": {
+        "sub": 366,
+        "dub": 366
+      },
+      "type": "TV"
+    },
+    {
+      "id": "black-clover-2404",
+      "name": "Black Clover",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f58b0204c20ae3310f65ae7b8cb9987e.jpg",
+      "jname": "Black Clover",
+      "episodes": {
+        "sub": 170,
+        "dub": 170
+      },
+      "type": "TV"
+    },
+    {
+      "id": "demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc-18056",
+      "name": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/db2f3ce7b9cab7fdc160b005bffb899a.png",
+      "jname": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+      "episodes": {
+        "sub": 11,
+        "dub": 11
+      },
+      "type": "TV"
+    },
+    {
+      "id": "boruto-naruto-next-generations-8143",
+      "name": "Boruto: Naruto Next Generations",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/32c83e2ad4a43229996356840db3982c.jpg",
+      "jname": "Boruto: Naruto Next Generations",
+      "episodes": {
+        "sub": 293,
+        "dub": 273
+      },
+      "type": "TV"
+    },
+    {
+      "id": "naruto-677",
+      "name": "Naruto",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/5db400c33f7494bc8ae96f9e634958d0.jpg",
+      "jname": "Naruto",
+      "episodes": {
+        "sub": 220,
+        "dub": 220
+      },
+      "type": "TV"
+    },
+    {
+      "id": "jujutsu-kaisen-tv-534",
+      "name": "Jujutsu Kaisen (TV)",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/82402f796b7d84d7071ab1e03ff7747a.jpg",
+      "jname": "Jujutsu Kaisen (TV)",
+      "episodes": {
+        "sub": 24,
+        "dub": 24
+      },
+      "type": "TV"
+    },
+    {
+      "id": "spy-x-family-17977",
+      "name": "Spy x Family",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/88bd17534dc4884f23027035d23d74e5.jpg",
+      "jname": "Spy x Family",
+      "episodes": {
+        "sub": 12,
+        "dub": 12
+      },
+      "type": "TV"
+    }
+  ],
+  "currentPage": 1,
+  "hasNextPage": false,
+  "totalPages": 1,
+  "searchQuery": "girls",
+  "searchFilters": {
+    "sort": "score",
+    "status": "finished-airing",
+    "rated": "pg-13",
+    "genres": "action,adventure",
+    "type": "movie",
+    "score": "good",
+    "language": "dub",
+    "season": "spring"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "tracks": [
+    {
+      "file": "https://s.megastatics.com/thumbnails/d097cbb43670302ef00e4a51a1cac2ad/thumbnails.vtt",
+      "kind": "thumbnails"
+    }
+  ],
+  "intro": {
+    "start": 35,
+    "end": 127
+  },
+  "outro": {
+    "start": 1330,
+    "end": 1419
+  },
+  "sources": [
+    {
+      "url": "https://tt57.biananset.net/_v7/d8e56d406f04d29b74b4e03042fca324d71f0cd196c65f1fcb9c6d27377df7bd17b6ce13536ee8f21bbfe92902b58f639455ccab8671ba0aa00782c152a6b8084cc518d7e32b2415bbe87dad7d55eb0736a3a15011d0533eceafe7a5841fde57bf868c98b776c63a5d23bbb687bf37df7365905359f738d51b40f6138f9e5d77/master.m3u8",
+      "type": "hls"
+    }
+  ],
+  "anilistID": 9253,
+  "malID": 9253
+}
