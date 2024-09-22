@@ -11,22 +11,22 @@ import AVKit
 struct WatchEpisodeView: View {
     var animeName: String
     var animeId: String
-
+    
     @State private var isLoading: Bool = false
     @State private var errorMessage: String = ""
-    @State private var showErrorAlert: Bool = false // To track retry failure
-
+    @State private var showErrorAlert: Bool = false
+    
     @State private var player = AVPlayer()
     @State private var episodesList: EpisodesList?
     @State private var animeServers: Servers = Servers(sub: [Server(serverName: "vidstreaming", serverId: 0)], dub: [Server(serverName: "vidstreaming", serverId: 0)])
     @State private var animeEpisodeLinks: StreamingLinks?
-
+    
     @State private var selectedServer: Server?
     @State private var selectedType: String = "sub"
     @State private var currentPlayingEpisode: EpisodeItem?
-
+    
     @State private var isServerFound: Bool = false
-
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
@@ -39,20 +39,20 @@ struct WatchEpisodeView: View {
                             .cornerRadius(10)
                     }
                 }
-
+                
                 Text(animeName)
                     .font(.title)
                     .padding(.top, 10)
-
+                
                 Text("Episode - \(currentPlayingEpisode?.number ?? 1)")
                     .foregroundStyle(Color.white.opacity(0.7))
                     .padding(.bottom, 10)
-
+                
                 Text("Servers")
                     .padding(.top, 26)
                     .font(.subheadline)
                     .foregroundStyle(Color.gray)
-
+                
                 Menu {
                     Section(header: Text("SUB")) {
                         ForEach(animeServers.sub.compactMap { $0 }, id: \.serverId) { server in
@@ -63,7 +63,7 @@ struct WatchEpisodeView: View {
                             }
                         }
                     }
-
+                    
                     Section(header: Text("DUB")) {
                         ForEach(animeServers.dub.compactMap { $0 }, id: \.serverId) { server in
                             Button(server.serverName ?? "Unknown Server") {
@@ -93,12 +93,12 @@ struct WatchEpisodeView: View {
                     .foregroundStyle(Color.white)
                     .cornerRadius(8)
                 }
-
+                
                 Text("Episodes")
                     .padding(.top, 26)
                     .font(.subheadline)
                     .foregroundStyle(Color.gray)
-
+                
                 if let listOfEpisodes = episodesList?.episodes {
                     EpisodesView(currentPlayingEpisode: $currentPlayingEpisode, episodes: listOfEpisodes, onEpisodeSelect: { selectedEpisode in
                         DispatchQueue.main.async {
@@ -108,7 +108,7 @@ struct WatchEpisodeView: View {
                         }
                     })
                 }
-
+                
                 Spacer()
             }
             .padding([.horizontal, .bottom], 26)
@@ -122,13 +122,13 @@ struct WatchEpisodeView: View {
             }
         }
     }
-
+    
     func resetPlayer() {
         player.pause()
         player.replaceCurrentItem(with: nil)
         isLoading = true
     }
-
+    
     func setupPlayer() {
         if let sources = animeEpisodeLinks?.sources, !sources.isEmpty, let url = sources[0]?.url {
             print("currently playing video: ", url)
@@ -145,11 +145,11 @@ struct WatchEpisodeView: View {
             self.errorMessage = "No sources available to play"
         }
     }
-
+    
     func loadData(retryCount: Int) {
         guard retryCount < 3 else {
             self.errorMessage = "Failed to load data after multiple attempts."
-            self.showErrorAlert = true // Show alert on failure
+            self.showErrorAlert = true
             return
         }
         isLoading = true
@@ -173,7 +173,7 @@ struct WatchEpisodeView: View {
             }
         })
     }
-
+    
     func loadStreamingLinks(retryCount: Int) {
         guard retryCount < 3 else {
             self.errorMessage = "Failed to load streaming links after multiple attempts."
@@ -182,16 +182,16 @@ struct WatchEpisodeView: View {
         }
         guard let selectedEpisode = currentPlayingEpisode else { return }
         selectedServer = animeServers.sub.first
-
+        
         let params: [(String, String, Bool)] = [
             ("id", "\(selectedEpisode.episodeId)", false),
             ("server", selectedServer?.serverName ?? "", true),
             ("category", selectedType, true)
         ]
-
+        
         let encodedUrl = URLUtility.urlEncode(params)
         let fullUrlString = "\(Endpoints.STREAMING_LINKS)?\(encodedUrl)"
-
+        
         APIClient.shared.makeCustomRequest(urlString: fullUrlString) { (result: Result<StreamingLinks, Error>) in
             DispatchQueue.main.async {
                 switch result {
