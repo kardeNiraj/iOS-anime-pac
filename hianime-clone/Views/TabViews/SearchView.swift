@@ -13,8 +13,8 @@ struct SearchView: View {
     @State private var searchSuggestion: SearchSuggestions? = loadJSON("search-suggestion")
     
     // used in query
-    @State private var selectedSearchId: String = "one-piece-100"
-    @State private var selectedSearchText: String = "One Piece"
+    @State private var selectedSearchId: String = ""
+    @State private var selectedSearchText: String = ""
     @State private var page: Int = 1
     @State private var type: String = "movie"
     @State private var status: String = "finished-airing"
@@ -77,7 +77,7 @@ struct SearchView: View {
                                         selectedSearchText = suggestion.name
                                         selectedSearchId = suggestion.id
                                         isSearching = false
-//                                        makeSearchRequest()
+                                        makeSearchRequest()
                                     }
                             }
                         }
@@ -89,7 +89,7 @@ struct SearchView: View {
                 }
                 
                 // searched anime
-                if let animes = searchResult?.animes {
+                if !(searchResult?.animes!.isEmpty)!, let animes = searchResult?.animes {
                     Text("Anime finds for: \(selectedSearchText)")
                         .font(.title2)
                     
@@ -134,7 +134,6 @@ struct SearchView: View {
         }
         .onAppear {
             setupSearchTextSubscriber()
-            //            makeSearchRequest()
         }
     }
     

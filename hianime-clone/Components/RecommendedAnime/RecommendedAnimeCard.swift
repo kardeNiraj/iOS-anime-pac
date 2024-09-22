@@ -20,7 +20,7 @@ struct RecommendedAnimeCard: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .shadow(color: .black, radius: 5, x: 5, y: 5)
                     
-                    Text("\(anime.name)")
+                    Text(anime.name ?? "")
                         .lineLimit(1)
                         .font(.headline)
                         .foregroundColor(.white)

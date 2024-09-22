@@ -34,6 +34,7 @@ struct AnimeInfoView: View {
                         VStack(alignment: .leading, spacing: 12) {
                             Text(animeInfo.anime.info.name!)
                                 .font(.title)
+                                .lineLimit(1)
                             Text(animeInfo.anime.info.description!)
                                 .lineLimit(4)
                                 .font(.subheadline)
@@ -146,6 +147,6 @@ struct AnimeInfoView: View {
 }
 
 #Preview {
-    AnimeInfoView()
+    AnimeInfoView(animeId: "one-piece-100")
 }
 

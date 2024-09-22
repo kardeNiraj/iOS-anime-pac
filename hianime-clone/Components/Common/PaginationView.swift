@@ -23,7 +23,10 @@ struct PaginationView: View {
                 }
             }) {
                 Image(systemName: "chevron.left")
-                    .foregroundColor(currentPage > 1 ? .red : .gray)
+                    .foregroundColor(.black)
+                    .padding(8)
+                    .background(currentPage > 1 ? Color.red : Color.gray)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
             .disabled(currentPage == 1)
             
@@ -41,8 +44,9 @@ struct PaginationView: View {
                 }
             } label: {
                 Text("\(startEpisode) - \(endEpisode) of \(totalItems)")
-                    .padding(8)
-                    .background(Color.gray.opacity(0.1))
+                    .padding(.vertical, 8)
+                    .padding(.horizontal, 28)
+                    .background(Color.gray.opacity(0.2))
                     .foregroundStyle(Color.white)
                     .cornerRadius(8)
             }
@@ -56,7 +60,10 @@ struct PaginationView: View {
                 }
             }) {
                 Image(systemName: "chevron.right")
-                    .foregroundColor(currentPage < totalPages ? .red : .gray)
+                    .foregroundColor(.black)
+                    .padding(8)
+                    .background(currentPage < totalPages ? Color.red : Color.gray) // Background color
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
             .disabled(currentPage == totalPages)
         }

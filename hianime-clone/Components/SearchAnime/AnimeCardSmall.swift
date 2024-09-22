@@ -29,7 +29,7 @@ struct AnimeCardSmall: View {
 //                            .padding([.top, .trailing], 5)
                     }
                     
-                    Text("\(anime.name)")
+                    Text(anime.name ?? "")
                         .font(.footnote)
                         .foregroundStyle(.white)
                         .fontWeight(.semibold)

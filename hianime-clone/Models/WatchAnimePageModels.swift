@@ -13,24 +13,24 @@ struct EpisodesList: Codable {
 }
 
 struct Servers: Decodable {
-    let sub: [Server]?
-    let dub: [Server]?
-    let episodeId: String
-    let episodeNo: Int
+    let sub: [Server]
+    let dub: [Server]
+//    let episodeId: String
+//    let episodeNo: Int
     
-    private enum CodingKeys: String, CodingKey {
-        case sub, dub, raw, episodeId, episodeNo
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        
-        self.sub = try container.decodeIfPresent([Server].self, forKey: .sub)
-        self.dub = try container.decodeIfPresent([Server].self, forKey: .dub)
-        self.episodeId = try container.decodeIfPresent(String.self, forKey: .episodeId) ?? ""
-        self.episodeNo = try container.decodeIfPresent(Int.self, forKey: .episodeNo) ?? 0
-        _ = try container.decodeIfPresent([Server].self, forKey: .raw)
-    }
+//    private enum CodingKeys: String, CodingKey {
+//        case sub, dub, raw, episodeId, episodeNo
+//    }
+//    
+//    init(from decoder: Decoder) throws {
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        
+//        self.sub = try container.decodeIfPresent([Server].self, forKey: .sub)
+//        self.dub = try container.decodeIfPresent([Server].self, forKey: .dub)
+//        self.episodeId = try container.decodeIfPresent(String.self, forKey: .episodeId) ?? ""
+//        self.episodeNo = try container.decodeIfPresent(Int.self, forKey: .episodeNo) ?? 0
+//        _ = try container.decodeIfPresent([Server].self, forKey: .raw)
+//    }
 }
 
 struct Server: Codable, Hashable {

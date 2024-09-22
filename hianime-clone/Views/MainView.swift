@@ -10,6 +10,19 @@ import SwiftUI
 struct MainView: View {
     @State private var selectedTab: Int = 0
     
+    init() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithDefaultBackground()
+        
+        appearance.stackedLayoutAppearance.selected.iconColor = UIColor.red
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.red]
+        appearance.stackedLayoutAppearance.normal.iconColor = UIColor.gray
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.gray]
+        
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -30,7 +43,6 @@ struct MainView: View {
                                 Image(systemName: selectedTab == 0 ? "house.fill" : "house")
                                 Text("Home")
                             }
-                            .foregroundColor(selectedTab == 0 ? .red : .gray)
                         }
                         .tag(0)
                     
@@ -41,7 +53,6 @@ struct MainView: View {
                                 Image(systemName: selectedTab == 1 ? "wand.and.stars" : "wand.and.stars.inverse")
                                 Text("Explore")
                             }
-                            .foregroundColor(selectedTab == 1 ? .red : .gray)
                         }
                         .tag(1)
                     
@@ -49,10 +60,9 @@ struct MainView: View {
                         .applyBackground()
                         .tabItem {
                             VStack {
-                                Image(systemName: selectedTab == 2 ? "magnifyingglass" : "magnifyingglass")
+                                Image(systemName: "magnifyingglass")
                                 Text("Search")
                             }
-                            .foregroundColor(selectedTab == 2 ? .red : .gray)
                         }
                         .tag(2)
                     
@@ -63,7 +73,6 @@ struct MainView: View {
                                 Image(systemName: selectedTab == 3 ? "hands.sparkles.fill" : "hands.sparkles")
                                 Text("Donate")
                             }
-                            .foregroundColor(selectedTab == 3 ? .red : .gray)
                         }
                         .tag(3)
                     
@@ -74,11 +83,10 @@ struct MainView: View {
                                 Image(systemName: selectedTab == 4 ? "heart.fill" : "heart")
                                 Text("Favourites")
                             }
-                            .foregroundColor(selectedTab == 4 ? .red : .gray)
                         }
                         .tag(4)
                 }
-                .accentColor(.red)
+                .accentColor(.gray)
                 .padding()
             }
             .navigationBarHidden(true)

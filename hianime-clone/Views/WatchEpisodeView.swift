@@ -14,65 +14,62 @@ struct WatchEpisodeView: View {
 
     @State private var isLoading: Bool = false
     @State private var errorMessage: String = ""
-    
-    @State private var selectedServer: Server?
-    @State private var selectedType: String = "sub"
-    @State private var currentPlayingEpisode: Int = 1
-    
+    @State private var showErrorAlert: Bool = false // To track retry failure
+
     @State private var player = AVPlayer()
     @State private var episodesList: EpisodesList?
-    @State private var animeServers: Servers?
+    @State private var animeServers: Servers = Servers(sub: [Server(serverName: "vidstreaming", serverId: 0)], dub: [Server(serverName: "vidstreaming", serverId: 0)])
     @State private var animeEpisodeLinks: StreamingLinks?
-    
-    @State private var serverIndex: Int = 0
-    @State private var hasTriedVidstreaming: Bool = false
+
+    @State private var selectedServer: Server?
+    @State private var selectedType: String = "sub"
+    @State private var currentPlayingEpisode: EpisodeItem?
+
     @State private var isServerFound: Bool = false
-    
+
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
                 if isLoading {
                     loadingView
                 } else {
-                    VideoPlayer(player: player)
-                        .frame(height: 300)
-                        .cornerRadius(10)
+                    ZStack {
+                        VideoPlayer(player: player)
+                            .frame(height: 300)
+                            .cornerRadius(10)
+                    }
                 }
-                
+
                 Text(animeName)
                     .font(.title)
                     .padding(.top, 10)
-                
-                Text("Episode - \(currentPlayingEpisode)")
+
+                Text("Episode - \(currentPlayingEpisode?.number ?? 1)")
                     .foregroundStyle(Color.white.opacity(0.7))
                     .padding(.bottom, 10)
-                
+
                 Text("Servers")
                     .padding(.top, 26)
                     .font(.subheadline)
                     .foregroundStyle(Color.gray)
-                
+
                 Menu {
-                    if let subServers = animeServers?.sub, !subServers.isEmpty {
-                        Section(header: Text("SUB")) {
-                            ForEach(subServers.compactMap { $0 }, id: \.serverId) { server in
-                                Button(server.serverName!) {
-                                    selectedServer = server
-                                    selectedType = "sub"
-                                    loadStreamingLinks()
-                                }
+                    Section(header: Text("SUB")) {
+                        ForEach(animeServers.sub.compactMap { $0 }, id: \.serverId) { server in
+                            Button(server.serverName ?? "Unknown Server") {
+                                selectedServer = server
+                                selectedType = "sub"
+                                loadStreamingLinks(retryCount: 0)
                             }
                         }
                     }
-                    
-                    if let dubServers = animeServers?.dub, !dubServers.isEmpty {
-                        Section(header: Text("DUB")) {
-                            ForEach(dubServers.compactMap { $0 }, id: \.serverId) { server in
-                                Button(server.serverName!) {
-                                    selectedServer = server
-                                    selectedType = "dub"
-                                    loadStreamingLinks()
-                                }
+
+                    Section(header: Text("DUB")) {
+                        ForEach(animeServers.dub.compactMap { $0 }, id: \.serverId) { server in
+                            Button(server.serverName ?? "Unknown Server") {
+                                selectedServer = server
+                                selectedType = "dub"
+                                loadStreamingLinks(retryCount: 0)
                             }
                         }
                     }
@@ -96,46 +93,48 @@ struct WatchEpisodeView: View {
                     .foregroundStyle(Color.white)
                     .cornerRadius(8)
                 }
-                
+
                 Text("Episodes")
                     .padding(.top, 26)
                     .font(.subheadline)
                     .foregroundStyle(Color.gray)
-                
+
                 if let listOfEpisodes = episodesList?.episodes {
                     EpisodesView(currentPlayingEpisode: $currentPlayingEpisode, episodes: listOfEpisodes, onEpisodeSelect: { selectedEpisode in
                         DispatchQueue.main.async {
-                            self.player = AVPlayer()
+                            resetPlayer()
                             self.currentPlayingEpisode = selectedEpisode
-                            self.hasTriedVidstreaming = false
-                            loadStreamingLinks()
+                            loadStreamingLinks(retryCount: 0)
                         }
                     })
                 }
-                
+
                 Spacer()
             }
             .padding([.horizontal, .bottom], 26)
             .onAppear {
-                loadData()
+                loadData(retryCount: 0)
             }
-            .alert(isPresented: $isLoading) {
-                Alert(title: Text("Loading..."), message: Text("Please wait while the data is loading."))
-            }
-            .alert(isPresented: Binding<Bool>(
-                get: { !errorMessage.isEmpty },
-                set: { _ in errorMessage = "" }
-            )) {
-                Alert(title: Text("Error"), message: Text(errorMessage))
+            .alert(isPresented: $showErrorAlert) {
+                Alert(title: Text("Error"),
+                      message: Text("500 Internal Server Error. Please try again."),
+                      dismissButton: .default(Text("OK")))
             }
         }
     }
-    
+
+    func resetPlayer() {
+        player.pause()
+        player.replaceCurrentItem(with: nil)
+        isLoading = true
+    }
+
     func setupPlayer() {
         if let sources = animeEpisodeLinks?.sources, !sources.isEmpty, let url = sources[0]?.url {
             print("currently playing video: ", url)
             if let videoURL = URL(string: url) {
-                player = AVPlayer(url: videoURL)
+                let playerItem = AVPlayerItem(url: videoURL)
+                player.replaceCurrentItem(with: playerItem)
                 player.play()
             } else {
                 print("Invalid URL string: \(url)")
@@ -146,124 +145,83 @@ struct WatchEpisodeView: View {
             self.errorMessage = "No sources available to play"
         }
     }
-    
-    func loadData() {
+
+    func loadData(retryCount: Int) {
+        guard retryCount < 3 else {
+            self.errorMessage = "Failed to load data after multiple attempts."
+            self.showErrorAlert = true // Show alert on failure
+            return
+        }
         isLoading = true
         
-        // Load anime servers from API
-        APIClient.shared.makeRequest(endpoint: "\(Endpoints.EPISODE_SERVERS)?episodeId=\(animeId)%3Fep%3D\(currentPlayingEpisode)", completion: { (result: Result<Servers, Error>) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let responseData):
-                    print("Successfully fetched servers: \(responseData)")
-                    self.animeServers = responseData
-                    self.selectedServer = animeServers?.sub?.first
-                    self.selectedType = "sub"
-                    loadStreamingLinks()
-                case .failure(let error):
-                    print("Error while fetching servers: \(error)")
-                    self.errorMessage = "Unable to fetch servers!"
-                }
-                isLoading = false
-            }
-        })
-        
-        // Load episodes
         APIClient.shared.makeRequest(endpoint: "\(Endpoints.LIST_EPISODES)/\(animeId)", completion: { (result: Result<EpisodesList, Error>) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let responseData):
                     print("Successfully fetched episode list: \(responseData)")
                     self.episodesList = responseData
+                    
+                    if let firstEpisode = responseData.episodes.first {
+                        self.currentPlayingEpisode = firstEpisode
+                        loadStreamingLinks(retryCount: 0)
+                    }
+                    isLoading = false
                 case .failure(let error):
-                    print("Error while fetching episode list: \(error)")
-                    self.errorMessage = error.localizedDescription
+                    print("Error while fetching episode list: \(error), retrying...")
+                    loadData(retryCount: retryCount + 1)
                 }
             }
         })
     }
-    
-    func loadStreamingLinks() {
-        guard let animeServers = animeServers else { return }
-        
-        var serverIndex = 0
-        var isServerFound = false
-        
-        func tryNextServer() {
-            guard let subServers = animeServers.sub else {
-                print("No servers available to try")
-                self.errorMessage = "No servers available to try"
-                return
-            }
-            
-            // Check if we have tried all sub servers and haven't tried "vidstreaming" yet
-            if serverIndex >= subServers.count {
-                if !hasTriedVidstreaming {
-                    selectedServer = Server(serverName: "vidstreaming", serverId: serverIndex+1)
-                    hasTriedVidstreaming = true
-                } else {
-                    print("No more servers to try, including fallback 'vidstreaming' server")
-                    isLoading = false
-                    self.errorMessage = "No servers available to load the episode"
-                    return
-                }
-            } else {
-                selectedServer = subServers[serverIndex]
-                serverIndex += 1
-            }
 
-            isLoading = true
-            
-            guard let selectedServer else { return }
-            
-            let params: [(String, String, Bool)] = [
-                ("id", "\(animeId)%3Fep%3D\(currentPlayingEpisode)", false),
-                ("server", selectedServer.serverName ?? "", true),
-                ("category", selectedType, true)
-            ]
-            
-            let encodedUrl = URLUtility.urlEncode(params)
-            let fullUrlString = "\(Endpoints.STREAMING_LINKS)?\(encodedUrl)"
-            
-            print(fullUrlString)
-            
-            APIClient.shared.makeCustomRequest(urlString: fullUrlString) { (result: Result<StreamingLinks, Error>) in
-                DispatchQueue.main.async {
-                    isLoading = false
-                    switch result {
-                    case .success(let responseData):
-                        if responseData.sources.isEmpty {
-                            print("Empty response, trying next server...")
-                            tryNextServer()
-                        } else {
-                            print("Successfully fetched streaming links: \(responseData)")
-                            self.animeEpisodeLinks = responseData
-                            setupPlayer()
-                            isServerFound = true
-                        }
-                    case .failure(let error):
-                        print("Error while fetching streaming links: \(error)")
-                        self.errorMessage = error.localizedDescription
-                        if !isServerFound {
-                            tryNextServer()
-                        }
+    func loadStreamingLinks(retryCount: Int) {
+        guard retryCount < 3 else {
+            self.errorMessage = "Failed to load streaming links after multiple attempts."
+            self.showErrorAlert = true
+            return
+        }
+        guard let selectedEpisode = currentPlayingEpisode else { return }
+        selectedServer = animeServers.sub.first
+
+        let params: [(String, String, Bool)] = [
+            ("id", "\(selectedEpisode.episodeId)", false),
+            ("server", selectedServer?.serverName ?? "", true),
+            ("category", selectedType, true)
+        ]
+
+        let encodedUrl = URLUtility.urlEncode(params)
+        let fullUrlString = "\(Endpoints.STREAMING_LINKS)?\(encodedUrl)"
+
+        APIClient.shared.makeCustomRequest(urlString: fullUrlString) { (result: Result<StreamingLinks, Error>) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let responseData):
+                    if responseData.sources.isEmpty {
+                        print("Empty response, retrying...")
+                        loadStreamingLinks(retryCount: retryCount + 1)
+                    } else {
+                        print("Successfully fetched streaming links: \(responseData)")
+                        self.animeEpisodeLinks = responseData
+                        setupPlayer()
+                        isLoading = false
                     }
+                case .failure(let error):
+                    print("Error while fetching streaming links: \(error), retrying...")
+                    loadStreamingLinks(retryCount: retryCount + 1)
+                    isLoading = false
                 }
             }
         }
-
-        tryNextServer()
     }
 }
 
 var loadingView: some View {
     VStack {
         Spacer()
-        Text("Loading episode...")
-            .font(.system(size: 16))
-            .foregroundColor(.white)
+        ProgressView()
+            .progressViewStyle(CircularProgressViewStyle())
+            .scaleEffect(1.0)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .multilineTextAlignment(.center)
         Spacer()
     }
     .frame(height: 300)
